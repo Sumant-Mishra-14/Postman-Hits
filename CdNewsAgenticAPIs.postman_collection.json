@@ -1,0 +1,1745 @@
+{
+  "info": {
+    "_postman_id": "68773c87-c3b7-4e45-b376-eeb255b2344c",
+    "name": "CdNewsAgenticAPIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26585971",
+    "_collection_link": "https://go.postman.co/collection/26585971-68773c87-c3b7-4e45-b376-eeb255b2344c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get-agentic-article-1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n   [{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"request_id\":999002,\n  \"news_title\":\"Asset Validation Test\",\n  \"featured_image\":\"https://picsum.photos/800/600\",\n  \"content_image\":\"https://picsum.photos/600/400\",\n  \"og_image\":\"https://picsum.photos/1200/630\",\n  \"pdf\":\"https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf\",\n  \"college_tag\":[\"25881\"],\n  \"h1_title\":\"Asset Validation Test\"\n}]\n      }]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s3.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s3",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s3.collegedunia.com/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"article\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 999002,\n    \"news_title\": \"Asset Validation Test 09 Jun 2026\",\n    \"excerpt\": \"Testing featured image content image og image and pdf mapping.\",\n    \"seo_title\": \"Asset Validation Test 09 Jun 2026\",\n    \"seo_description\": \"Validate featured image content image og image and pdf through automation API.\",\n    \"og_title\": \"Asset Validation Test\",\n    \"og_description\": \"Testing image and pdf asset synchronization.\",\n    \"html_body\": \"<h2>Asset Validation</h2><p>Testing asset mapping through API.</p>\",\n    \""
+      },
+      "response": []
+    },
+    {
+      "name": "get-agentic-article-image",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\": \"article\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 999003,\n    \"news_title\": \"CDN Asset Validation Test\",\n    \"excerpt\": \"Testing featured image content image og image and pdf mapping through CDN URLs.\",\n    \"seo_title\": \"CDN Asset Validation Test\",\n    \"seo_description\": \"Validate asset mapping using valid Collegedunia CDN URLs.\",\n    \"og_title\": \"CDN Asset Validation\",\n    \"og_description\": \"Testing featured image content image og image and pdf synchronization.\",\n    \"html_body\": \"<h2>CDN Asset Validation</h2><p>Testing CDN asset mapping through API.</p><img src=\\\"https://image-static.collegedunia.com/public/college_data/images/campusimage/14182980471406118238IITM_Main Building.jpg\\\" alt=\\\"Content Image\\\">\",\n    \"featured_image\": \"https://image-static.collegedunia.com/public/college_data/images/logos/1434977143jpjpjpjpj.jpg\",\n    \"content_image\": \"https://image-static.collegedunia.com/public/college_data/images/campusimage/14182980471406118238IITM_Main Building.jpg\",\n    \"og_image\": \"https://image-static.collegedunia.com/public/college_data/images/logos/1434977143jpjpjpjpj.jpg\",\n    \"pdf\": \"https://staticstage.collegedunia.com/college-static-test/public/image/OWASP_Testing_Guide_v4_9ba2d7f8c5ec7f911db338674428ab1f.pdf\",\n    \"timestamp\": \"2026-06-09 15:05:00\",\n    \"exam_tag\": [\"301\"],\n    \"is_alert\": 0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\": \"CDN Asset Validation Test\"\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s3.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s3",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s3.collegedunia.com/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"article\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 999003,\n    \"news_title\": \"CDN Asset Validation Test\",\n    \"excerpt\": \"Testing featured image content image og image and pdf mapping through CDN URLs.\",\n    \"seo_title\": \"CDN Asset Validation Test\",\n    \"seo_description\": \"Validate asset mapping using valid Collegedunia CDN URLs.\",\n    \"og_title\": \"CDN Asset Validation\",\n    \"og_description\": \"Testing featured image content image og image and pdf synchronization.\",\n    \"html_body\": \"<h2>CDN Asset Validation</h2><p>Testing CDN asset mapping through API.</p><img src=\\\"https://image-static.collegedunia.com/public/college_data/images/campusimage/14182980471406118238IITM_Main%20Building.jpg\\\" alt=\\\"Content Image\\\">\",\n    \"featured_image\": \"https://image-static.collegedunia.com/public/college_data/images/logos/1434977143jpjpjpjpj.jpg\",\n    \"content_image\": \"https://image-static.collegedunia.com/public/college_data/images/campusimage/14182980471406118238IITM_Main%20Building.jpg\",\n    \"og_image\": \"https://image-static.collegedunia.com/public/college_data/images/logos/1434977143jpjpjpjpj.jpg\",\n    \"pdf\": \"https://staticstage.collegedunia.com/college-static-test/public/image/OWASP_Testing_Guide_v4_9ba2d7f8c5ec7f911db338674428ab1f.pdf\",\n    \"timestamp\": \"2026-06-09 15:05:00\",\n    \"exam_tag\": [\"301\"],\n    \"is_alert\": 0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\": \"CDN Asset Validation Test\"\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "new-get-agentic-article-images",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"request_id\":999006,\n  \"news_title\":\"CDN Asset Mapping Validation\",\n  \"excerpt\":\"Testing featured image, content image, OG image and PDF mapping using Collegedunia CDN assets.\",\n  \"seo_title\":\"CDN Asset Mapping Validation\",\n  \"seo_description\":\"Validate asset mapping using Collegedunia CDN URLs.\",\n  \"og_title\":\"CDN Asset Mapping Validation\",\n  \"og_description\":\"Testing image and PDF synchronization through Agentic Article API.\",\n  \"h1_title\":\"CDN Asset Mapping Validation\",\n  \"html_body\":\"<h2>CDN Asset Validation</h2><p>Testing asset rendering.</p><img src=\\\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\\\" alt=\\\"Content Image\\\">\",\n  \"featured_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"content_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"og_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"pdf\":\"https://staticstage.collegedunia.com/college-static-test/public/image/OWASP_Testing_Guide_v4_9ba2d7f8c5ec7f911db338674428ab1f.pdf\",\n  \"timestamp\":\"2026-06-09 16:00:00\",\n  \"exam_tag\":[\"301\"],\n  \"college_tag\":[\"25881\"],\n  \"is_alert\":0\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s3.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s3",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s3.collegedunia.com/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"request_id\":999006,\n  \"news_title\":\"CDN Asset Mapping Validation\",\n  \"excerpt\":\"Testing featured image, content image, OG image and PDF mapping using Collegedunia CDN assets.\",\n  \"seo_title\":\"CDN Asset Mapping Validation\",\n  \"seo_description\":\"Validate asset mapping using Collegedunia CDN URLs.\",\n  \"og_title\":\"CDN Asset Mapping Validation\",\n  \"og_description\":\"Testing image and PDF synchronization through Agentic Article API.\",\n  \"h1_title\":\"CDN Asset Mapping Validation\",\n  \"html_body\":\"<h2>CDN Asset Validation</h2><p>Testing asset rendering.</p><img src=\\\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\\\" alt=\\\"Content Image\\\">\",\n  \"featured_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"content_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"og_image\":\"https://image-static.collegedunia.com/public/image/08-14:30-img_001.jpeg\",\n  \"pdf\":\"https://staticstage.collegedunia.com/college-static-test/public/image/OWASP_Testing_Guide_v4_9ba2d7f8c5ec7f911db338674428ab1f.pdf\",\n  \"timestamp\":\"2026-06-09 16:00:00\",\n  \"exam_tag\":[\"301\"],\n  \"college_tag\":[\"25881\"],\n  \"is_alert\":0\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "'collDunia'='22omdmamj441hp1d65mie56cd5'"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"news_title\": \"  Today test data 9\",\n    \"excerpt\": \"This is test data 9 \",\n    \"seo_title\": \" how was your day \",\n    \"seo_description\": \"\",\n    \"og_title\": \" \",\n    \"og_description\": \" this is me test data 1\",\n    \"html_body\": \"\",\n    \"image_url\": \"  public/image/pdf-icon-download-red-1780905525.jpg \",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"    \"\n      }]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s3.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s3",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: '\\''collDunia'\\''='\\''22omdmamj441hp1d65mie56cd5'\\''' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"news_title\": \"new ds dtestingsd  dd dsfdsf news article\",\n    \"excerpt\": \"new once\",\n    \"seo_title\": \"\",\n    \"seo_description\": \"\",\n    \"og_title\": \"\",\n    \"og_description\": \"\",\n    \"html_body\": \"\",\n    \"image_url\": \"\",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"this is the test one\"\n      }]'"
+      },
+      "response": []
+    },
+    {
+      "name": "update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "'collDunia'='22omdmamj441hp1d65mie56cd5'"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n\n\"entity_type\": \"article\",\n\"content_type\": \"collegedunia\",\n\"entity_id\": 101382,\n\"request_id\": 12349,\n\"seo_title\": \"Today test 9  of Hyderabad PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\",\n\"exam_tag\": [\"301\"],\n\"h1_title\": \"Test Data of 9th June PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\"\n\n  }]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: '\\''collDunia'\\''='\\''22omdmamj441hp1d65mie56cd5'\\''' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"entity_id\" : 101381,\n    \"request_id\": 12348,\n    \"seo_title\":\"this is the seo title\",\n    \"exam_tag\": [\"301\"],\n    \"h1_title\" : \"NCERT Solutions for Class 12 Physics Chapter fds1 Electric Charges and Fields test\"\n  },\n{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12349,\n    \"entity_id\" : 101356,\n    \"exam_tag\": [\"301\"],\n    \"h1_title\" : \"fdasfds fds dsfsa this is the test two testing\"\n\n  }]'"
+      },
+      "response": []
+    },
+    {
+      "name": "s3-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "'collDunia'='22omdmamj441hp1d65mie56cd5'"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\": \"article\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"article_title\": \"GUJCET 2026 Scorecard: How to Download Score Card and Rank Card \",\n    \"excerpt\": \"\",\n    \"seo_title\": \"\",\n    \"seo_description\": \"\",\n    \"og_title\": \"\",\n    \"og_description\": \"\",\n    \"html_body\": \"\",\n    \"image_url\": \"\",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"GUJCET 2026 Scorecard: How to Download Score Card and Rank Card\"\n      }]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: '\\''collDunia'\\''='\\''22omdmamj441hp1d65mie56cd5'\\''' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"news_title\": \"new ds dtestingsd  dd dsfdsf news article\",\n    \"excerpt\": \"new once\",\n    \"seo_title\": \"\",\n    \"seo_description\": \"\",\n    \"og_title\": \"\",\n    \"og_description\": \"\",\n    \"html_body\": \"\",\n    \"image_url\": \"\",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"this is the test one\"\n      }]'"
+      },
+      "response": []
+    },
+    {
+      "name": "https://s3.collegedunia.com/web-api/nc/college/update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12349,\n\"seo_title\":\"Write test 9 of Hyderabad PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\",\n\"exam_tag\":[\"301\"],\n\"h1_title\":\"Test Data of 9th June PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\"\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \n--header 'Content-Type: application/x-www-form-urlencoded' \n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \n--data-urlencode 'data=[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12349,\n\"seo_title\":\"Today test 9 of Hyderabad PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\",\n\"exam_tag\":[\"301\"],\n\"h1_title\":\"Test Data of 9th June PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\"\n}]'\n"
+      },
+      "response": []
+    },
+    {
+      "name": "excerpt-is-required-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12350,\n  \"seo_title\":\"Article Excerpt Test\",\n  \"h1_title\":\"Article Excerpt Test\",\n  \"excerpt\":\"Testing article creation using excerpt field\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12350,\n  \"seo_title\":\"Article Excerpt Test\",\n  \"h1_title\":\"Article Excerpt Test\",\n  \"excerpt\":\"Testing article creation using excerpt field\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "news-title-generates-content-idupdate-agentic-article-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12351,\n  \"news_title\":\"Article News Title Test\",\n  \"seo_title\":\"Article News Title Test\",\n  \"h1_title\":\"Article News Title Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12351,\n  \"news_title\":\"Article News Title Test\",\n  \"seo_title\":\"Article News Title Test\",\n  \"h1_title\":\"Article News Title Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "whether-html-body-mandatry-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12352,\n  \"seo_title\":\"HTML Body Test\",\n  \"h1_title\":\"HTML Body Test\",\n  \"html_body\":\"<p>Testing article body content</p>\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12352,\n  \"seo_title\":\"HTML Body Test\",\n  \"h1_title\":\"HTML Body Test\",\n  \"html_body\":\"<p>Testing article body content</p>\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "mandatory-field-validation-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12353,\n  \"seo_title\":\"\",\n  \"h1_title\":\"\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12353,\n  \"seo_title\":\"\",\n  \"h1_title\":\"\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "news-comparison-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101356,\n  \"request_id\":12354,\n  \"seo_title\":\"News Comparison Test\",\n  \"h1_title\":\"News Comparison Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101356,\n  \"request_id\":12354,\n  \"seo_title\":\"News Comparison Test\",\n  \"h1_title\":\"News Comparison Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "article-comparision-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12355,\n  \"seo_title\":\"Article Comparison Test\",\n  \"h1_title\":\"Article Comparison Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12355,\n  \"seo_title\":\"Article Comparison Test\",\n  \"h1_title\":\"Article Comparison Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "duplicate-request-test-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12349,\n  \"seo_title\":\"Duplicate Request Test\",\n  \"h1_title\":\"Duplicate Request Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101382,\n  \"request_id\":12349,\n  \"seo_title\":\"Duplicate Request Test\",\n  \"h1_title\":\"Duplicate Request Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid-entity-id-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":99999999,\n  \"request_id\":12360,\n  \"seo_title\":\"Invalid Entity Test\",\n  \"h1_title\":\"Invalid Entity Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":99999999,\n  \"request_id\":12360,\n  \"seo_title\":\"Invalid Entity Test\",\n  \"h1_title\":\"Invalid Entity Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "missing-entity-id-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"request_id\":12361,\n  \"seo_title\":\"Missing Entity Test\",\n  \"h1_title\":\"Missing Entity Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"request_id\":12361,\n  \"seo_title\":\"Missing Entity Test\",\n  \"h1_title\":\"Missing Entity Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "featured_image-content_image-og_image-pdf-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-hd-blue-1780905525.jpg\",\n\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \n--header 'Content-Type: application/x-www-form-urlencoded' \n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \n--data-urlencode 'data=[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"https://image-static.collegedunia.com/public/image/pdf-icon-hd-blue-1780905525.jpg\",\n\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"301\"]\n}]'\n"
+      },
+      "response": []
+    },
+    {
+      "name": "get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "'collDunia'='22omdmamj441hp1d65mie56cd5'"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"news_title\": \" RBUSET 2026 Registration Open Exam on May 22 for UG and PG Admission 2026\",\n    \"excerpt\": \"RBUSET 2026, Rayat Bahra University's Scholarship Entrance Test, is now open for registration. The online exam is on May 22, 2026 and covers UG and PG programs across all three RBU campuses.\",\n    \"seo_title\": \" this is test data \",\n    \"seo_description\": \"\",\n    \"og_title\": \"  \",\n    \"og_description\": \"  \",\n    \"html_body\": \"    \",\n    \"image_url\": \"\",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"  Test Data of Hyderabad PG Admission 2026 Open at uohydcuet.samarth.edu.in; Apply by June 8\"\n      }]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: '\\''collDunia'\\''='\\''22omdmamj441hp1d65mie56cd5'\\''' \\\n--data-urlencode 'data=[{\n    \"entity_type\": \"news\",\n    \"content_type\": \"collegedunia\",\n    \"request_id\": 12348,\n    \"news_title\": \"new ds dtestingsd  dd dsfdsf news article\",\n    \"excerpt\": \"new once\",\n    \"seo_title\": \"\",\n    \"seo_description\": \"\",\n    \"og_title\": \"\",\n    \"og_description\": \"\",\n    \"html_body\": \"\",\n    \"image_url\": \"\",\n    \"timestamp\": \"2026-05-22 11:31:20\",\n    \"exam_tag\": [],\n    \"is_alert\":0,\n    \"college_tag\": [\"25881\"],\n    \"h1_title\" : \"this is the test one\"\n      }]'"
+      },
+      "response": []
+    },
+    {
+      "name": "update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n\"entity_type\":\"article\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101382,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "image-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n\"entity_type\":\"news\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101434,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"pdf-icon-hd-blue-1780905525.jpg\",\n\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"501\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n\"entity_type\":\"news\",\n\"content_type\":\"collegedunia\",\n\"entity_id\":101434,\n\"request_id\":12370,\n\"seo_title\":\"CDN Asset Validation Using PDF Icons\",\n\"h1_title\":\"CDN Asset Validation Using PDF Icons\",\n\"featured_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"content_image\":\"pdf-icon-download-red-1780905525.jpg\",\n\"og_image\":\"pdf-icon-hd-blue-1780905525.jpg\",\n\"pdf\":\"https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf\",\n\"exam_tag\":[\"501\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "other-news-feature-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101379,\n  \"request_id\":12366,\n  \"featured_image\":\"https://example.com/featured.jpg\",\n  \"content_image\":\"https://example.com/content.jpg\",\n  \"og_image\":\"https://example.com/og.jpg\",\n  \"pdf\":\"https://example.com/sample.pdf\",\n  \"seo_title\":\"Media Validation Test\",\n  \"h1_title\":\"Media Validation Test\",\n  \"exam_tag\":[\"301\"]\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"article\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101379,\n  \"request_id\":12366,\n  \"featured_image\":\"https://example.com/featured.jpg\",\n  \"content_image\":\"https://example.com/content.jpg\",\n  \"og_image\":\"https://example.com/og.jpg\",\n  \"pdf\":\"https://example.com/sample.pdf\",\n  \"seo_title\":\"Media Validation Test\",\n  \"h1_title\":\"Media Validation Test\",\n  \"exam_tag\":[\"301\"]\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "all-required-field-validated-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\",\n  \"request_id\":12372\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\",\n  \"request_id\":12372\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "dummy-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\":\"news\",\n    \"content_type\":\"collegedunia\",\n    \"request_id\":12373,\n    \"news_title\":\"dummy\",\n    \"excerpt\":\"dummy\",\n    \"seo_title\":\"dummy\",\n    \"seo_description\":\"dummy\",\n    \"og_title\":\"dummy\",\n    \"og_description\":\"dummy\",\n    \"html_body\":\"<p>dummy</p>\",\n    \"image_url\":\"\",\n    \"timestamp\":\"2026-06-10 12:00:00\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[],\n    \"h1_title\":\"dummy\",\n    \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\"\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n    \"entity_type\":\"news\",\n    \"content_type\":\"collegedunia\",\n    \"request_id\":12373,\n    \"news_title\":\"dummy\",\n    \"excerpt\":\"dummy\",\n    \"seo_title\":\"dummy\",\n    \"seo_description\":\"dummy\",\n    \"og_title\":\"dummy\",\n    \"og_description\":\"dummy\",\n    \"html_body\":\"<p>dummy</p>\",\n    \"image_url\":\"\",\n    \"timestamp\":\"2026-06-10 12:00:00\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[],\n    \"h1_title\":\"dummy\",\n    \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\"\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "101384-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\":\"news\",\n    \"content_type\":\"collegedunia\",\n    \"entity_id\":101384,\n    \"request_id\":12374,\n    \"news_title\":\"new ds dtestingsd dd dsfdsf news article\",\n    \"excerpt\":\"new once\",\n    \"seo_title\":\"new ds dtestingsd dd dsfdsf news article\",\n    \"seo_description\":\"\",\n    \"og_title\":\"\",\n    \"og_description\":\"\",\n    \"html_body\":\"<p>test</p>\",\n    \"image_url\":\"\",\n    \"timestamp\":\"2026-06-01 16:29:30\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[],\n    \"h1_title\":\"this is the test one\"\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n    \"entity_type\":\"news\",\n    \"content_type\":\"collegedunia\",\n    \"entity_id\":101384,\n    \"request_id\":12374,\n    \"news_title\":\"new ds dtestingsd dd dsfdsf news article\",\n    \"excerpt\":\"new once\",\n    \"seo_title\":\"new ds dtestingsd dd dsfdsf news article\",\n    \"seo_description\":\"\",\n    \"og_title\":\"\",\n    \"og_description\":\"\",\n    \"html_body\":\"<p>test</p>\",\n    \"image_url\":\"\",\n    \"timestamp\":\"2026-06-01 16:29:30\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[],\n    \"h1_title\":\"this is the test one\"\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "dummy-test-2-pdf-update-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n    \"entity_type\":\"article\",\n    \"content_type\":\"collegedunia\",\n    \"entity_id\":101450,\n    \"request_id\":12385,\n    \"news_title\":\"dummy test\",\n    \"excerpt\":\"dummy test\",\n    \"seo_title\":\"dummy test\",\n    \"seo_description\":\"dummy test\",\n    \"og_title\":\"dummy test\",\n    \"og_description\":\"dummy test\",\n    \"html_body\":\"<p>dummy test</p>\",\n    \"image_url\":\"\",\n    \"pdf\":\"pdf-sample_0.pdf\",\n    \"timestamp\":\"2026-06-10 12:00:00\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[\"501\"],\n    \"h1_title\":\"dummy test 10 june\"\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "update-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/update-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n    \"entity_type\":\"article\",\n    \"content_type\":\"collegedunia\",\n    \"entity_id\":101450,\n    \"request_id\":12385,\n    \"news_title\":\"dummy test\",\n    \"excerpt\":\"dummy test\",\n    \"seo_title\":\"dummy test\",\n    \"seo_description\":\"dummy test\",\n    \"og_title\":\"dummy test\",\n    \"og_description\":\"dummy test\",\n    \"html_body\":\"<p>dummy test</p>\",\n    \"image_url\":\"\",\n    \"pdf\":\"pdf-sample_0.pdf\",\n    \"timestamp\":\"2026-06-10 12:00:00\",\n    \"exam_tag\":[],\n    \"is_alert\":0,\n    \"college_tag\":[\"501\"],\n    \"h1_title\":\"dummy test 10 june\"\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "with-alert-1get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\",\n  \"request_id\":12372,\n  \"is_alert\":1\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"slug\":\"gate-2026-psu-recruitment-expected-cutoffs-by-discipline\",\n  \"request_id\":12372,\n  \"is_alert\":1\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "fields-check-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "key": "Cookie",
+            "value": "collDunia=22omdmamj441hp1d65mie56cd5"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101384,\n  \"request_id\":12372\n}]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "cd6779dev",
+            "collegewale",
+            "co"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://cd6779dev.collegewale.co/web-api/nc/college/get-agentic-article' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: collDunia=22omdmamj441hp1d65mie56cd5' \\\n--data-urlencode 'data=[{\n  \"entity_type\":\"news\",\n  \"content_type\":\"collegedunia\",\n  \"entity_id\":101384,\n  \"request_id\":12372\n}]'"
+      },
+      "response": []
+    },
+    {
+      "name": "article/upsert-silo-subsilo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "type": "text",
+              "key": "exam_id",
+              "value": "1697"
+            },
+            {
+              "type": "text",
+              "key": "tab",
+              "value": "practice_papers"
+            },
+            {
+              "type": "text",
+              "key": "languageId",
+              "value": "1"
+            },
+            {
+              "type": "text",
+              "key": "category",
+              "value": "other"
+            },
+            {
+              "type": "text",
+              "key": "other_category",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "silo_subSilo_name",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "author",
+              "value": "788"
+            },
+            {
+              "type": "text",
+              "key": "updated_date_time",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "ap_title",
+              "value": "CUET UG Question Papers 2026: Previous Year PDFs"
+            },
+            {
+              "type": "text",
+              "key": "ap_description",
+              "value": "<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>"
+            },
+            {
+              "type": "text",
+              "key": "ap_OG_Details",
+              "value": "{\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}"
+            },
+            {
+              "type": "text",
+              "key": "ap_SEO_Details",
+              "value": "{\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "article",
+            "upsert-silo-subsilo"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo' \\\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n--header 'Accept: application/json' \\\n--form 'exam_id=1697' \\\n--form 'tab=practice_papers' \\\n--form 'languageId=1' \\\n--form 'category=other' \\\n--form 'other_category=Question Paper' \\\n--form 'silo_subSilo_name=Question Paper' \\\n--form 'author=788' \\\n--form 'updated_date_time=true' \\\n--form 'ap_title=CUET UG Question Papers 2026: Previous Year PDFs' \\\n--form 'ap_description=<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>' \\\n--form 'ap_OG_Details={\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}' \\\n--form 'ap_SEO_Details={\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "cutoff-rticle/upsert-silo-subsilo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "type": "text",
+              "key": "exam_id",
+              "value": "1697"
+            },
+            {
+              "type": "text",
+              "key": "tab",
+              "value": "cutoff"
+            },
+            {
+              "type": "text",
+              "key": "languageId",
+              "value": "1"
+            },
+            {
+              "type": "text",
+              "key": "category",
+              "value": "other"
+            },
+            {
+              "type": "text",
+              "key": "other_category",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "silo_subSilo_name",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "author",
+              "value": "788"
+            },
+            {
+              "type": "text",
+              "key": "updated_date_time",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "ap_title",
+              "value": "CUET UG Question Papers 2026: Previous Year PDFs"
+            },
+            {
+              "type": "text",
+              "key": "ap_description",
+              "value": "<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>"
+            },
+            {
+              "type": "text",
+              "key": "ap_OG_Details",
+              "value": "{\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}"
+            },
+            {
+              "type": "text",
+              "key": "ap_SEO_Details",
+              "value": "{\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "article",
+            "upsert-silo-subsilo"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo' \\\n\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n\n--header 'Accept: application/json' \\\n\n--form 'exam_id=1697' \\\n\n--form 'tab=cutoff' \\\n\n--form 'languageId=1' \\\n\n--form 'category=other' \\\n\n--form 'other_category=Question Paper' \\\n\n--form 'silo_subSilo_name=Question Paper' \\\n\n--form 'author=788' \\\n\n--form 'updated_date_time=true' \\\n\n--form 'ap_title=CUET UG Question Papers 2026: Previous Year PDFs' \\\n\n--form 'ap_description=<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>' \\\n\n--form 'ap_OG_Details={\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}' \\\n\n--form 'ap_SEO_Details={\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "Practice-papers-article/upsert-silo-subsilo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "type": "text",
+              "key": "exam_id",
+              "value": "1697"
+            },
+            {
+              "type": "text",
+              "key": "tab",
+              "value": "Practice_Papers"
+            },
+            {
+              "type": "text",
+              "key": "languageId",
+              "value": "1"
+            },
+            {
+              "type": "text",
+              "key": "category",
+              "value": "other"
+            },
+            {
+              "type": "text",
+              "key": "other_category",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "silo_subSilo_name",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "author",
+              "value": "788"
+            },
+            {
+              "type": "text",
+              "key": "updated_date_time",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "ap_title",
+              "value": "CUET UG Question Papers 2026: Previous Year PDFs"
+            },
+            {
+              "type": "text",
+              "key": "ap_description",
+              "value": "<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>"
+            },
+            {
+              "type": "text",
+              "key": "ap_OG_Details",
+              "value": "{\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}"
+            },
+            {
+              "type": "text",
+              "key": "ap_SEO_Details",
+              "value": "{\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "article",
+            "upsert-silo-subsilo"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo' \\\n\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n\n--header 'Accept: application/json' \\\n\n--form 'exam_id=1697' \\\n\n--form 'tab=Practice_Papers' \\\n\n--form 'languageId=1' \\\n\n--form 'category=other' \\\n\n--form 'other_category=Question Paper' \\\n\n--form 'silo_subSilo_name=Question Paper' \\\n\n--form 'author=788' \\\n\n--form 'updated_date_time=true' \\\n\n--form 'ap_title=CUET UG Question Papers 2026: Previous Year PDFs' \\\n\n--form 'ap_description=<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>' \\\n\n--form 'ap_OG_Details={\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}' \\\n\n--form 'ap_SEO_Details={\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "multiple-question-paper-silo-article/upsert-silo-subsilo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api-key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "type": "text",
+              "key": "exam_id",
+              "value": "1697"
+            },
+            {
+              "type": "text",
+              "key": "tab",
+              "value": "Practice_Papers"
+            },
+            {
+              "type": "text",
+              "key": "languageId",
+              "value": "1"
+            },
+            {
+              "type": "text",
+              "key": "category",
+              "value": "other"
+            },
+            {
+              "type": "text",
+              "key": "other_category",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "silo_subSilo_name",
+              "value": "Question Paper"
+            },
+            {
+              "type": "text",
+              "key": "author",
+              "value": "788"
+            },
+            {
+              "type": "text",
+              "key": "updated_date_time",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "ap_title",
+              "value": "CUET UG Question Papers 2026: Previous Year PDFs"
+            },
+            {
+              "type": "text",
+              "key": "ap_description",
+              "value": "<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>"
+            },
+            {
+              "type": "text",
+              "key": "ap_OG_Details",
+              "value": "{\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}"
+            },
+            {
+              "type": "text",
+              "key": "ap_SEO_Details",
+              "value": "{\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "article",
+            "upsert-silo-subsilo"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://s4.collegedunia.com/web-api/nc/article/upsert-silo-subsilo' \\\n\n--header 'api-key: 89a3fb3d1812a8df3fb80d4d3544e190' \\\n\n--header 'Accept: application/json' \\\n\n--form 'exam_id=1697' \\\n\n--form 'tab=Practice_Papers' \\\n\n--form 'languageId=1' \\\n\n--form 'category=other' \\\n\n--form 'other_category=Question Paper' \\\n\n--form 'silo_subSilo_name=Question Paper' \\\n\n--form 'author=788' \\\n\n--form 'updated_date_time=true' \\\n\n--form 'ap_title=CUET UG Question Papers 2026: Previous Year PDFs' \\\n\n--form 'ap_description=<p>CUET UG question papers from previous years show the real difficulty level, question types, and section-wise weightage set by the NTA. Going through them helps candidates understand how Language, Domain-specific, and General Test questions are framed.</p><p>Solving past CUET question papers under timed conditions builds exam temperament and reveals recurring topics. Use them alongside the latest syllabus to focus revision on the areas that appear most often.</p>' \\\n\n--form 'ap_OG_Details={\"og_title\":\"CUET UG Question Papers 2026\",\"og_description\":\"Previous year CUET UG question papers with section-wise questions for all parts of the exam.\"}' \\\n\n--form 'ap_SEO_Details={\"seo_title\":\"CUET UG Question Papers 2026: Previous Year PDFs\",\"seo_description\":\"Download CUET UG previous year question papers with section-wise questions for Language, Domain, and General Test, based on the latest NTA pattern.\",\"seo_keywords\":\"CUET question papers, CUET previous year question paper, CUET UG question paper pdf\"}'"
+      },
+      "response": []
+    },
+    {
+      "name": "silo-get-agentic-article",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "89a3fb3d1812a8df3fb80d4d3544e190"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "data",
+              "value": "[\n    {\n      \"entity_type\": \"exam\",\n      \"entity_id\": 123,\n      \"content_type\": \"sub_silo\",\n      \"content_id\": 456,\n      \"data\": {\n        \"h1\": \"Sample H1 Heading\",\n        \"seo_title\": \"Sample SEO Title\",\n        \"meta_description\": \"Sample meta description.\",\n        \"keywords\": {\"primary\": \"kw\", \"secondary\": [], \"lsi\": [], \"trending\": []},\n        \"full_html\": \"<p>Article bodyâ¦</p>\",\n        \"created_at\": \"2026-06-10 12:00:00\"\n      }\n    }\n  ]"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://s4.collegedunia.com/web-api/nc/college/get-agentic-article",
+          "protocol": "https",
+          "host": [
+            "s4",
+            "collegedunia",
+            "com"
+          ],
+          "path": [
+            "web-api",
+            "nc",
+            "college",
+            "get-agentic-article"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST \"https://s4.collegedunia.com/web-api/nc/college/get-agentic-article\" \\\n  -H \"Api-Key: 89a3fb3d1812a8df3fb80d4d3544e190\" \\\n  -H \"Content-Type: application/x-www-form-urlencoded\" \\\n  --data-urlencode 'data=[\n    {\n      \"entity_type\": \"exam\",\n      \"entity_id\": 123,\n      \"content_type\": \"sub_silo\",\n      \"content_id\": 456,\n      \"data\": {\n        \"h1\": \"Sample H1 Heading\",\n        \"seo_title\": \"Sample SEO Title\",\n        \"meta_description\": \"Sample meta description.\",\n        \"keywords\": {\"primary\": \"kw\", \"secondary\": [], \"lsi\": [], \"trending\": []},\n        \"full_html\": \"<p>Article bodyâ¦</p>\",\n        \"created_at\": \"2026-06-10 12:00:00\"\n      }\n    }\n  ]'"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "pm.test(\"Status code is 201 (Created)\", function () {",
+          "    pm.response.to.have.status(201);",
+          "});",
+          "",
+          "pm.test(\"Response time is less than 2s\", function () {",
+          "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+          "});",
+          "",
+          "pm.test(\"Response is JSON\", function () {",
+          "    pm.response.to.be.json;",
+          "});"
+        ]
+      }
+    }
+  ]
+}
